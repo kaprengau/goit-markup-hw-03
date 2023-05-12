@@ -66,6 +66,10 @@ ol {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 /* ---------------------------Header------------------------ */
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -147,11 +151,11 @@ ol {
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero > .container {
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -177,9 +181,11 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  display: flex;
+  display: block;
   margin: 0 auto;
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 .button:hover {
   background-color: #404bbf;
@@ -192,14 +198,15 @@ ol {
 /* ------------------------Advantages-------------- */
 
 .advantages {
-}
-
-.container-adv {
   padding-top: 120px;
   padding-bottom: 60px;
 }
 
+.container-adv {
+}
+
 .adv-title {
+  display: flex;
 }
 
 .adv-list {
@@ -210,11 +217,8 @@ ol {
   margin: 0 auto;
 }
 
-.list {
-}
-
 .adv-item {
-  width: 264px;
+  gap: 24px;
 }
 
 .adv-list-titl {
@@ -223,6 +227,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .adv-list-text {
@@ -235,11 +240,12 @@ ol {
 /* ----------------------Duing----------------------- */
 
 .duing {
+  padding-bottom: 120px;
 }
 
 .container-duing {
-  padding-top: 60px;
 }
+
 .duing-title {
   font-weight: var(--fw-bolt);
   font-size: 36px;
@@ -258,6 +264,10 @@ ol {
   justify-content: space-between;
   gap: 24px;
   padding-bottom: 120px;
+}
+
+.duing-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /* --------------------------Team--------------------- */
@@ -293,6 +303,12 @@ ol {
 .team-item {
   background-color: #ffffff;
   text-align: center;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-photo-item {
+  padding: 32px 16px;
 }
 
 .team-item-title {
@@ -301,7 +317,7 @@ ol {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  padding-top: 32px;
+  margin: 8px;
 }
 
 .team-item-text {
@@ -310,7 +326,6 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  padding-bottom: 32px;
 }
 
 .team-img {
@@ -327,11 +342,9 @@ ol {
 }
 
 .container-footer {
-  display: flex;
 }
 
 .footer-wrapper {
-  width: 264px;
 }
 
 .footer-logo {
@@ -343,6 +356,8 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-s {
@@ -356,6 +371,7 @@ ol {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   margin-top: 17px;
+  width: 264px;
 }
 
 /*!-------------------Portfolio------------------------ */
@@ -388,14 +404,18 @@ ol {
   cursor: pointer;
   border: none;
   padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .filters-item-button:hover {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 .filters-item-button:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 /*----------------------Photo-------------- */
@@ -410,6 +430,7 @@ ol {
 
 .text-photo {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .list {
