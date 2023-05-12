@@ -198,8 +198,7 @@ img {
 /* ------------------------Advantages-------------- */
 
 .advantages {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 120px 0;
 }
 
 .container-adv {
@@ -215,10 +214,11 @@ img {
   justify-content: space-between;
   width: 1128px;
   margin: 0 auto;
+  gap: 24px;
 }
 
 .adv-item {
-  gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .adv-list-titl {
