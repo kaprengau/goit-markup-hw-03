@@ -386,7 +386,6 @@ img {
 }
 
 .filters-list {
-  padding-top: 96px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -431,7 +430,7 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding-bottom: 120px;
+
 }
 
 .text-photo {
