@@ -98,12 +98,12 @@ img {
 
 .header-logo-s {
   color: var(--secondary-color);
+  margin-right: 76px;
 }
 
 .header-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .header-link {
