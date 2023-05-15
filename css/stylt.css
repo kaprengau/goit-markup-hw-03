@@ -94,11 +94,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-right: 76px;
 }
 
 .header-logo-s {
   color: var(--secondary-color);
-  margin-right: 76px;
+  margin: 0;
 }
 
 .header-list {
