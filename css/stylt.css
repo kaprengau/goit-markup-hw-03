@@ -87,7 +87,6 @@ img {
 }
 
 .header-logo {
-  margin-right: 76px;
   font-family: var(--Raleway-);
   font-weight: var(--fw-extra-bolt);
   font-size: 18px;
@@ -104,6 +103,7 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
+  margin-left: 76px;
 }
 
 .header-link {
@@ -430,7 +430,6 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-
 }
 
 .text-photo {
